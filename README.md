@@ -2,6 +2,18 @@
 
 This plugin provides date and time-related variables for TeamCity builds. It allows you to access the current date and time components in your build configurations, which can be useful for versioning, naming artifacts, or other time-dependent operations.
 
+---
+
+## TeamCity Plugins, YouTrack Apps & more
+
+### J&J Ideenschmiede GmbH - Your Partner for JetBrains Solutions
+
+We are **TeamCity Certified** and **YouTrack Certified** developers, specializing in custom solutions for JetBrains products.
+
+👉🏼 Visit our [website](https://www.jjideenschmiede.de) to learn more about our services.
+
+---
+
 ## Features
 
 The plugin adds the following variables to your TeamCity builds:
