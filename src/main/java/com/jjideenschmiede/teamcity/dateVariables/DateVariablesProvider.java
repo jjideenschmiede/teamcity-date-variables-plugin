@@ -1,10 +1,9 @@
-package de.teamcity.datevariables;
+package com.jjideenschmiede.teamcity.dateVariables;
 
 import jetbrains.buildServer.serverSide.SBuild;
 import jetbrains.buildServer.serverSide.parameters.AbstractBuildParametersProvider;
 import org.jetbrains.annotations.NotNull;
 
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;

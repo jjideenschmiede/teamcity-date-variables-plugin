@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jjideenschmiede.teamcity.dateVariables</groupId>
+	<artifactId>teamcity-date-variable-plugin</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<teamcity.version>2025.03</teamcity.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>jetbrains-all</id>
+			<url>https://download.jetbrains.com/teamcity-repository</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jetbrains.teamcity</groupId>
+			<artifactId>server-api</artifactId>
+			<version>${teamcity.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.aspectj</groupId>
+					<artifactId>aspectjweaver</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>create-plugin-zip</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<mkdir dir="${project.build.directory}/plugin"/>
+								<mkdir dir="${project.build.directory}/plugin/server"/>
+								<copy file="${project.build.directory}/${project.artifactId}-${project.version}.jar"
+									  tofile="${project.build.directory}/plugin/server/${project.artifactId}.jar"/>
+								<copy file="${project.basedir}/teamcity-plugin.xml"
+									  todir="${project.build.directory}/plugin"/>
+								<zip destfile="${project.build.directory}/${project.artifactId}.zip"
+									 basedir="${project.build.directory}/plugin"/>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,4 +1,4 @@
-package de.teamcity.datevariables;
+package com.jjideenschmiede.teamcity.dateVariables;
 
 /**
  * Constants for date variables plugin
