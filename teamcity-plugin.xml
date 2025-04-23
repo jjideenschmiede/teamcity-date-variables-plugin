@@ -7,8 +7,8 @@
 		<version>1.0.0</version>
 		<description>Provides date and time related variables for TeamCity builds</description>
 		<vendor>
-			<name>TeamCity Community</name>
-			<url>https://github.com/jjideenschmiede/teamcity-date-variables-plugin</url>
+			<name>J&amp;J Ideenschmiede GmbH</name>
+			<url>https://jj-ideenschmiede.de</url>
 		</vendor>
 	</info>
 	<deployment use-separate-classloader="true" />
