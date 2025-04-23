@@ -4,6 +4,11 @@ This plugin provides date and time-related variables for TeamCity builds. It all
 
 ---
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/e576a978-8eb9-470d-9690-855a947e5440">
+  <img src="[light-image.png](https://github.com/user-attachments/assets/b4fead79-173d-46f9-8767-3a1872de4ef8)" alt="Beschreibung des Bildes">
+</picture>
+
 ## TeamCity Plugins, YouTrack Apps & more
 
 ### J&J Ideenschmiede GmbH - Your Partner for JetBrains Solutions
