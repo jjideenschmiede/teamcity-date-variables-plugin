@@ -26,14 +26,7 @@
 			<artifactId>server-api</artifactId>
 			<version>${teamcity.version}</version>
 			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.aspectj</groupId>
-					<artifactId>aspectjweaver</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
-
 		<!-- Test dependencies -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
