@@ -4,6 +4,11 @@ This plugin provides date and time-related variables for TeamCity builds. It all
 
 ---
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/teamcity-certified-partner-white.svg">
+  <img src="docs/images/teamcity-certified-partner-black.svg" alt="TeamCity Certified Partner">
+</picture>
+
 ## TeamCity Plugins, YouTrack Apps & more
 
 ### J&J Ideenschmiede GmbH - Your Partner for JetBrains Solutions
