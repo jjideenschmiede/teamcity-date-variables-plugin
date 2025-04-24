@@ -15,7 +15,7 @@ This plugin provides date and time-related variables for TeamCity builds. It all
 
 We are **TeamCity Certified** and **YouTrack Certified** developers, specializing in custom solutions for JetBrains products.
 
-👉🏼 Visit our [website](https://www.jjideenschmiede.de) to learn more about our services.
+👉🏼 Visit our [website](https://www.jj-ideenschmiede.de) to learn more about our services.
 
 ---
 
