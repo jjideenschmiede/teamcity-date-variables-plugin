@@ -41,7 +41,7 @@ The plugin adds the following variables to your TeamCity builds:
 
 ## Installation
 
-1. Download the latest release from the [releases page](https://github.com/jjideenschmiede/teamcity-date-variables-plugin/releases)
+1. Download the latest release from the [marketplace](https://plugins.jetbrains.com/plugin/27149-date-variables)
 2. Go to the TeamCity Administration area
 3. Navigate to Plugins List
 4. Click "Upload plugin zip"
@@ -69,3 +69,7 @@ mvn clean package
 ```
 
 The resulting plugin zip file will be in the `target` directory.
+
+## Help & Support
+
+If you have any questions or need support, feel free to reach out to us via [e-mail](mailto:support@jj-ideenschmiede.de) or visit our [website](https://www.jj-ideenschmiede.de).
